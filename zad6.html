@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery">
+        <img src="assets/img1.jpg" alt="">
+        <img src="assets/img2.jpg" alt="">
+        <img src="assets/img3.jpg" alt="">
+        <img src="assets/img1.jpg" alt="">
+    </div>
+  <hr>
+    <div id="links">  <h2>Pozostałe Zadania</h2>
+        <p>
+            <a target="_blank" href="zad1.html">Zadanie 1</a>
+            <a target="_blank" href="zad2.html">Zadanie 2</a>
+            <a target="_blank" href="zad3.html">Zadanie 3</a>
+            <a target="_blank" href="zad4.html">Zadanie 4</a>
+            <a target="_blank" href="zad5.html">Zadanie 5</a>
+        </p>
+    </div>
+    <div id="links">
+    <p text-align="center">
+        <a href="https://github.com/Sosna123">The code author </a>
+    </p>
+    </div>
+    <script src="jquery-1.11.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".gallery img").click(function(){
+                $(".gallery img").not(this).animate({width: "100px"}, 1000)
+                $(this).animate({width: "500px"}, 1000)
+            })
+        })
+    </script>
+    
+</body>
+</html>

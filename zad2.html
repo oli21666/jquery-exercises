@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container2">
+        <div class="block">
+            <button type="button" class="header">menu 1</button>
+            <div class="content2 betterText">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nemo nesciunt at omnis aliquam optio, est cum pariatur? At, cum?</div>
+        </div>
+        <div class="block">
+            <button type="button" class="header">menu 2</button>
+            <div class="content2 betterText">2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae odio at harum ea beatae, expedita, mollitia sed debitis voluptatum adipisci facilis! Corrupti vitae maxime ullam esse quae illo officiis enim.</div>
+        </div>
+        <div class="block">
+            <button type="button" class="header">menu 3</button>
+            <div class="content2 betterText">3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est necessitatibus cumque quo quisquam dolorem! Et perferendis amet iusto hic? Inventore, laudantium rem temporibus aliquam tenetur sed optio nihil facere fuga.</div>
+        </div>
+    </div>
+    <hr>
+    <div id="links">  <h2>Pozostałe Zadania</h2>
+        <p>
+            <a target="_blank" href="zad1.html">Zadanie 1</a>
+            <a target="_blank" href="zad3.html">Zadanie 3</a>
+            <a target="_blank" href="zad4.html">Zadanie 4</a>
+            <a target="_blank" href="zad5.html">Zadanie 5</a>
+            <a target="_blank" href="zad6.html">Zadanie 6</a>
+        </p>
+</div>
+<hr>
+<div id="links">
+    <p text-align="center">
+        <a href="https://github.com/Sosna123">The code author </a>
+    </p>
+</div>
+    <script src="jquery-1.11.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content2").hide()
+
+            $(".container2 .block").hover(
+                function(){
+                    $(this).children(".content2").stop(true, true).fadeIn(500)
+                },
+                function(){
+                    $(this).children(".content2").stop(true, true).fadeOut(500)
+                }
+            );
+        })
+    </script>
+    
+</body>
+</html>

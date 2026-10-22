@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7EjEfF-s17987mPjTD9z_iEPPuU537Yb8DC7VsIj7bv38H0AZcl_d-K8&s=10" alt="" id="zdjecie" class="responsive-photo">
+    <script src="jquery-1.11.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#zdjecie").hover(
+                function(){
+                    $(this).attr({"src": "https://zoopers.pl/cdn/shop/articles/img_4bd3506a-1a41-477d-82ba-5239fb802729.jpg?v=1749407491"})
+                },
+                function(){
+                    $(this).attr({"src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7EjEfF-s17987mPjTD9z_iEPPuU537Yb8DC7VsIj7bv38H0AZcl_d-K8&s=10"})
+                }
+            )
+        })
+    </script>
+      <hr>
+    <div id="links">  <h2>Pozostałe Zadania</h2>
+        <p>
+            <a target="_blank" href="zad1.html">Zadanie 1</a>
+            <a target="_blank" href="zad2.html">Zadanie 2</a>
+            <a target="_blank" href="zad4.html">Zadanie 4</a>
+            <a target="_blank" href="zad5.html">Zadanie 5</a>
+            <a target="_blank" href="zad6.html">Zadanie 6</a>
+        </p>
+    </div>
+    <hr>
+    <div id="links">
+    <p text-align="center">
+        <a href="https://github.com/Sosna123">The code author </a>
+    </p>
+    </div>
+</html>

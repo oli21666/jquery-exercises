@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="dodaj">dodaj</button>
+    <button id="usun">usun</button>
+    <ul id="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+      <hr>
+    <div id="links">  <h2>Pozostałe Zadania</h2>
+        <p>
+            <a target="_blank" href="zad1.html">Zadanie 1</a>
+            <a target="_blank" href="zad2.html">Zadanie 2</a>
+            <a target="_blank" href="zad3.html">Zadanie 3</a>
+            <a target="_blank" href="zad5.html">Zadanie 5</a>
+            <a target="_blank" href="zad6.html">Zadanie 6</a>
+        </p>
+    
+    
+    </div>
+    <hr>
+    <div id="links">
+    <p text-align="center">
+        <a href="https://github.com/Sosna123">The code author </a>
+    </p>
+    </div>
+    <script src="jquery-1.11.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#dodaj").click(function(){
+                let nextNumber = $("#list li").length + 1
+                $("#list").append(`<li>${nextNumber}</li>`)
+            })
+            $("#usun").click(function(){
+                $("#list li:last").remove()
+                $("#list li").each(function(index){
+                    $(this).text(index + 1)
+                })
+            })
+        })
+    </script>
+</body>
+</html>
